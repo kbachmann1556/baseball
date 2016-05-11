@@ -1,3 +1,7 @@
+# Baseball Stats
+
+Download and run the mysqlDB.sql file in MySQL Workbench.
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

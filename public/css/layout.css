@@ -1,0 +1,65 @@
+.playerInfoForm{
+	display: none;
+	width: 80%;
+	margin-left: 10%;
+	/*height: 50%;*/
+	position: absolute;
+	top: 10px;
+	border: 2px solid red;
+	border-radius: 5px;
+	z-index: 100px;
+}
+
+.playerInfoForm form{
+	text-align: center;
+	height: 100%;
+}
+
+.playerInfoForm input[type=text]{
+	display: block;
+	width: 90%;
+	margin-left: 5%;
+	height: 35px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.playerInfoForm input[type=submit]{
+	margin-bottom: 5px;
+	margin-top: 35px;
+	display: block;
+	width: 90%;
+	margin-left: 5%;
+	height: 35px;
+	border-radius: 10px;
+}
+
+.addAnother{
+	text-align: left;
+}
+#main{
+	text-align: center;
+}
+
+.cancel{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.cancel img{
+	height: 100%;
+	width: 100%;
+}
+
+.checkbox{
+	position: absolute;
+	left: 5%;
+	bottom: 12%;
+}
+
+.checkbox span{
+	display: inline-block;
+}

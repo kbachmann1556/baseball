@@ -1,5 +1,5 @@
 // routes
 
-league.config.routes = {};
-league.config.routes.get_champions = "/user/get_champions";
-league.config.routes.get_mastery = "/user/get_mastery";
+baseball.config.routes = {};
+baseball.config.routes.add_player = "/user/add_player";
+baseball.config.routes.load_chart = "/user/load_chart";

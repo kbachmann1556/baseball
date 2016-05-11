@@ -4,12 +4,12 @@ function Request(method, path, data, callback) {
   
   // defaults  
   this.method = typeof method !== 'undefined' ? method : "POST";
-  this.path = typeof path !== 'undefined' ? league.base_path + path : null;
+  this.path = typeof path !== 'undefined' ? baseball.base_path + path : null;
   this.dataType = "JSON";
 
   // add token if data present
   if (typeof data !== 'undefined') {
-    data._token = league.token;
+    data._token = baseball.token;
     this.data = JSON.parse(JSON.stringify(data));
   }
   else {
@@ -29,7 +29,7 @@ function Request(method, path, data, callback) {
   }
 
   this.setData = function(data) {
-    data._token = league.token;
+    data._token = baseball.token;
     this.data = JSON.parse(JSON.stringify(data));
   }
 
@@ -38,7 +38,7 @@ function Request(method, path, data, callback) {
   }
 
   this.setPath = function(path) {
-    this.path = league.base_path + path;
+    this.path = baseball.base_path + path;
   }
 
   this.getResponse = function() {
@@ -53,8 +53,7 @@ function Request(method, path, data, callback) {
       data: this.data,
       dataType: this.dataType
     }).done(function(response){
-      console.log('request', response);
-      league.response = response;
+      baseball.response = response;
       callback(data);
     });
   }

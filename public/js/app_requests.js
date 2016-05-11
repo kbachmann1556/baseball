@@ -2,13 +2,16 @@
 // Requests from App
 //-------------------------------------------------------
 
-/* Add Product to Cart */
-function getChampions(){
-  var request = new Request("GET", league.config.routes.get_champions, {}, renderGetChampions);
+function addPlayer(data){
+	if(data.another == "true"){
+	  var request = new Request("GET", baseball.config.routes.add_player, data, renderAddMore);
+	}else{
+	  var request = new Request("GET", baseball.config.routes.add_player, data, renderChart);
+	}
   request.execute();
 };
 
-function getMastery(summoner){
-	var request = new Request("GET", league.config.routes.get_mastery, summoner, renderGetMastery);
+function loadChart(data){
+  var request = new Request("GET", baseball.config.routes.load_chart, data, renderChart);
   request.execute();
-}
+};

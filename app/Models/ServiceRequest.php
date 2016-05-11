@@ -196,7 +196,7 @@ class ServiceRequest {
 
 
   /**
-  * Apply Riot Header
+  * Apply espn Header
   * @access public
   * @param $contentType
   * @param $orgId
@@ -222,7 +222,7 @@ class ServiceRequest {
   */
 
   public function setApiRequestPath($requestPath) {
-    $this->setRequestPath($_ENV['API_PATH'] . ltrim($requestPath, '/') . $_ENV['RIOT_DEV_KEY']);
+    $this->setRequestPath($_ENV['API_PATH'] . ltrim($requestPath, '/') . $_ENV['BASEBALL_DEV_KEY']);
     return $this;
   }
 

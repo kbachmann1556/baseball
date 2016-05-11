@@ -4,12 +4,11 @@ return [
     'DEBUG' => 'debug',
 
     /* FRONT END SERVICE REQUESTS */
-    "FE_GET_CHAMPIONS" => 'user/get_champions',
-    "FE_GET_MASTERY" => "user/get_mastery",
+    "FE_GET_PLAYER" => 'user/get_player',
+    "FE_ADD_PLAYER" => 'user/add_player',
+    "FE_LOAD_CHART" => 'user/load_chart',
     
     /* BACKEND SERVICE PATHS */
-    "GET_CHAMPIONS" => 'api/lol/static-data/na/v1.2/champion',
-    "GET_SUMMONER" => 'api/lol/na/v1.4/summoner/by-name/%s',
-    "GET_MASTERY" => 'championmastery/location/NA1/player/%s/champions',
+    "GET_PLAYER" => 'mlb-t5/players/%s/profile.json',
     
 ];

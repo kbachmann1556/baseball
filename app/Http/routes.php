@@ -1,13 +1,13 @@
 <?php
 
 
-Route::get('/', function () {
-    return view('landing');
-});
+Route::get('/', 'RequestController@landing');
 
 Route::group(['middleware' => ['web']], function () {
 
-	Route::any(\Config::get('paths.FE_GET_CHAMPIONS'), 'RequestController@getAllChampions');
-	Route::any(\Config::get('paths.FE_GET_MASTERY'), 'RequestController@getMastery');
+	Route::any(\Config::get('paths.FE_GET_PLAYER'), 'RequestController@getPlayer');
+	Route::any(\Config::get('paths.FE_ADD_PLAYER'), 'RequestController@addPlayer');
+	Route::any(\Config::get('paths.FE_LOAD_CHART'), 'RequestController@loadChart');
+
 });
 
